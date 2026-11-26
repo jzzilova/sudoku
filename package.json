@@ -7,7 +7,8 @@
     "dev": "vite --port 5180 --strictPort",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --port 5180 --strictPort",
-    "test": "vitest run"
+    "test": "vitest run",
+    "deploy": "npm test && npm run build && node scripts/deploy.mjs"
   },
   "dependencies": {
     "@fontsource/atkinson-hyperlegible-next": "^5.3.0"

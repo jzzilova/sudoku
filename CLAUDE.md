@@ -1,7 +1,13 @@
 # Sudoku
 
 Sudoku for a user with very low vision, played on an Android tablet. UI in Czech.
-Vite + strict TypeScript, no framework, no backend. Not yet deployed.
+Vite + strict TypeScript, no framework, no backend.
+
+## Deploy
+- Public repo `jzzilova/sudoku`, live at https://jzzilova.github.io/sudoku/
+- `npm run deploy` (only when asked) tests, builds and force-pushes `dist/` to
+  `gh-pages`. Pushing `main` alone does not update the site.
+- No GitHub Actions: the `gh` token lacks the `workflow` scope.
 
 ## Commands
 - `npm run dev` (port 5180; `.claude/launch.json` in the parent folder, name `sudoku`)
